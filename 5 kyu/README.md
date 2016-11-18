@@ -37,3 +37,25 @@ var decodeMorse = function(morseCode){
 }
 console.log(decodeMorse('.... . -.--   .--- ..- -.. .'))
 ```
+
+## 2016-11-18
+
+[链接](http://www.codewars.com/kata/classic-hello-world/train/javascript)
+
+**detail**:
+
+如何构造一个类似这样的用法 `Solution.main(); // Hello World!`
+
+**code**:
+
+```javascript
+class Solution{
+  static main() {
+    console.log("Hello World!");
+  }  
+}
+Solution.main('a');
+// 用对象也能实现，感觉跑偏
+var Solution = {};
+Solution.main = () => {console.log('Hello World!')};
+```
